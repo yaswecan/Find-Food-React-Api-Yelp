@@ -21,7 +21,7 @@ let Yelp = {
             if(jsonResponse.businesses){
     /* If this key does exists in the JSON response,
      we should return an array that has all of the business' properties */            
-                return jsonResponse.businesses.map(((business) => {
+                return jsonResponse.businesses.map((business) => {
                     /* 
 À l'intérieur de la fonction de rappel, on retourne un objet.
 Cet objet sera long et devrait inclure tous les attributs nécessaires
@@ -40,7 +40,7 @@ Cet objet sera long et devrait inclure tous les attributs nécessaires
                         review_count : business.review_count
 
                     };
-                }));
+                });
             }
         });
 }
